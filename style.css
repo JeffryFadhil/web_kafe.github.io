@@ -1,0 +1,189 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #1b1b1b;
+        color: #fff;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 20px 0;
+    }
+ nav{
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+ }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    nav ul li {
+        display: inline;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .hero {
+        background-image: url("asset/7d4bbfabbc85fba28976039beaf9c004.gif");
+        background-size: cover;
+        text-align: center;
+        padding: 50px 0;
+    
+    }
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .hero button {
+        padding: 10px 20px;
+        border: 2px solid #fafafa;
+        background: none;
+        color: #0c1316;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    .section {
+        padding: 50px 0;
+    }
+    .section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section img {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+    .section p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .section button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border: 2px solid #00bcd4;
+        background: none;
+        color: #00bcd4;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px 0;
+       justify-content: space-evenly;
+    }
+    .carousel .type_title {
+        flex: 0 0 auto;
+        background: #333;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .carousel img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .product-details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .product-details .item {
+        flex: 1 1 calc(50% - 20px);
+        background: #333;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .product-details .item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .product-details .item h3 {
+        margin-top: 20px;
+    }
+    .product-details .item p {
+        margin-top: 10px;
+    }
+    .specifications {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .specifications .spec {
+        flex: 1 1 calc(33% - 20px);
+        background: #333;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background: #000;
+    }
+    footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+    footer ul li {
+        display: inline;
+    }
+    footer ul li a {
+        color: #00bcd4;
+        text-decoration: none;
+    }
+    footer p {
+        margin-top: 20px;
+        color: #666;
+    }
+    @media (max-width: 768px) {
+        .product-details .item, .specifications .spec {
+            flex: 1 1 100%;
+        }
+       
+    }
+    @media (min-width:768px){
+        .hero{
+            background-image: url("asset/7d4bbfabbc85fba28976039beaf9c004.gif");
+            width:100%;
+            height: 50vh;
+            padding: 50px 0;
+            background-repeat: no-repeat;
+          background-size: cover;
+          background-position:center;
+
+        }   
+        .carousel img{
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+        }
+    }
